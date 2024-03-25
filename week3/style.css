@@ -21,6 +21,26 @@
     margin: auto;
 }
 
+#aaa {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu > ol > li > ul {
+    width:800px;
+	display:none;
+	position: absolute;
+	font-size: 30px;
+	background: palegoldenrod;
+}
+
+#menu > ol > li:hover > ul {
+	display:block;
+}
+
+
 body {
     background-color: orange;
 }
@@ -43,6 +63,7 @@ img {
     display: inline-block;
     font-size: 30px;
     margin-left: 30%;
+    margin-right: 20%;
 }
 
 section {
