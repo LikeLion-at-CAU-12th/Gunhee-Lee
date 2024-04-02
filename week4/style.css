@@ -222,7 +222,7 @@ h4 {
     justify-content: space-around;
 }   
 
-@media screen and (max-width: 2760px){
+@media screen and (max-width:1200px){
     nav {
         flex-basis: 40%;
     }
@@ -239,7 +239,7 @@ h4 {
     }
 }
 
-@media screen and (max-width:2050px){
+@media screen and (max-width:1024px){
     aside {
         display: none;
     }
@@ -248,7 +248,7 @@ h4 {
     }
 }
 
-@media screen and (max-width:2002px){
+@media screen and (max-width:768px){
     header {
         justify-content: center;
     }
@@ -260,7 +260,7 @@ h4 {
     }
 }
 
-@media screen and (max-width:1450px) {
+@media screen and (max-width:600px) {
     aside {
         display: block;
         display: flex;
