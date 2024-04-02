@@ -1,0 +1,276 @@
+#container {
+    width: 99vw;
+    height: 99vh;
+    background-color: rgb(255, 147, 0);
+    background: url('img/tangerine.jpg');
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-basis: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 0.5rem solid black; */
+    border-radius: 30px;
+}
+
+nav {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: row;
+    /* border: 0.2rem solid black; */
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-basis: 40%;
+    /* background-color: black;
+    border: 0.25rem solid lightslategrey; */
+    border-radius: 20px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: light;
+    color: black;
+    
+}
+
+.nav-item2 {
+    display: flex;
+    flex-basis: 15%;
+    /* background-color: black;
+    border: 0.25rem solid lightslategrey; */
+    border-radius: 20px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: light;
+    color: black;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    /* border: 0.5rem solid black; */
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 95%;
+    /* border: 0.25rem solid black; */
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 95%;
+    /* border: 0.25rem solid black; */
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    width: 95%;
+    height: 35%;
+    /* border: 0.25rem solid black; */
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+    /* border: 0.25rem solid black; */
+    border-radius: 20px;
+    justify-content: baseline;
+    align-items: left;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    flex-basis: 5%;
+    flex-direction: row;
+    /* border: 0.5rem solid black; */
+    border-radius: 30px;
+    justify-content: flex-end;
+}
+
+#profile {
+    width: 65%;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+#icon {
+    width: 100px;
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name {
+    margin: 10px;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-size: 3.5em;
+    font-style: normal;
+}
+
+p {
+    display: flex;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    margin: 0;
+    color: black;
+}
+
+h4 {
+    margin: 5% 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 4rem;
+    justify-content: center;
+    color: brown;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about-title {
+    margin-right: 20px;
+}
+
+.title-item {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: light;
+    color: black;
+}
+
+#icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}   
+
+@media screen and (max-width: 2760px){
+    nav {
+        flex-basis: 40%;
+    }
+    .container-section{
+        flex-direction: row;
+    }
+    section {
+        flex-direction: column;
+        height: 95%;
+    }
+    article {
+        width: 80%;
+        height: 25%;
+    }
+}
+
+@media screen and (max-width:2050px){
+    aside {
+        display: none;
+    }
+    .container-section{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:2002px){
+    header {
+        justify-content: center;
+    }
+    nav {
+        flex-basis: 80%
+    }
+    footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    aside {
+        display: block;
+        display: flex;
+        width: 95%;
+        justify-content: center;
+    }
+    .container-section{
+        display: none;
+    } 
+    .nav-item {
+        display: none;
+    }
+}
