@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Delicious Handrawn";
+  font-size: 30px;
+
+  background-color: var(--background-color);
+  color: var(--color); 
+}
+
+button {
+  all: unset;
+}
+
+/* display:flex 속성 재사용 */
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header-wrapper 영역 */
+#reset-button {
+  font-size: 15px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.change-reverse {
+  border: black solid 2px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3px;
+}
+
+#title {
+  font-size: 30px;
+}
+
+/* contents-wrapper 영역 */
+#contents-wrapper {
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contents {
+  border: black solid 4px;
+}
+
+/* section1(점수판) */
+.score-section {
+  height: 15%;
+  justify-content: space-evenly;
+}
+
+/* section2(경기장) */
+.display-section {
+    height: 60%;
+    justify-content: space-evenly;
+}
+
+.display-main {
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+/* section3(버튼) */
+.button-section {
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#rockBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  font-size: 60px;
+}
+
+#scissorsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  font-size: 60px;
+}
+
+#paperBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  font-size: 60px;
+}
+
+.fa-regular {
+  border-radius: 50%;
+  border: black 4px solid;
+}
+
+#my-hand-icon,
+#computer-hand-icon {
+  border: black;
+}
+
+#my-hand-text,
+#computer-hand-text {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+}
+
+.icon-container {
+  font-size: 80px;
+
+  text-align: center;
+  width: 100%;
+  height: 80%;
+}
+
+.title {
+  width: 100px;
+  text-align: center;
+  border-bottom: black solid;
+}
+
+/* 버튼 스타일 */
+#toggleDarkmode {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  background-color: #004fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+  transition: 0.3s;
+  text-align: center;
+}
+
+#toggleDarkmode:focus {
+  outline: 0;
+}
+
+#toggleDarkmode:hover {
+  background-color: rgba(0, 79, 255, 0.9);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 79, 255, 0.6);
+}
+
+/* 다크모드 */
+[data-theme='dark-mode'] {
+  background-color: pink;
+  color: white;
+}
+
+[data-theme='dark-mode'] .contents {
+  border: white solid 4px;
+}
+
+[data-theme='dark-mode'] .title {
+  border-bottom: white solid;
+}
+
+[data-theme='dark-mode'] .fa-regular {
+  border: white 4px solid;
+}
+
+[data-theme='dark-mode'] .change-reverse {
+  border: white solid 2px;
+  background-color: white;
+  color: grey;
+}
+
+[data-theme='dark-mode'] #toggleDarkmode {
+  background-color: white;
+  color: grey;
+  box-shadow: 0 2px 4px rgb(255, 142, 142);
+}
+
+[data-theme='dark-mode'] #toggleDarkmode:hover {
+  background-color: rgb(255, 172, 172);
+  box-shadow: 0 2px 4px rgb(255, 142, 142);
+}
