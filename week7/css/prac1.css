@@ -1,0 +1,28 @@
+body {
+  background-color: #e2e2e2;
+}
+
+span {
+  text-align: center;
+}
+
+#container {
+  width: 70%;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+  height: 80%;
+  /* 이미지의 비율 유지*/
+  object-fit: cover;
+}
