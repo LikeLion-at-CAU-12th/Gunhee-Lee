@@ -1,0 +1,28 @@
+body {
+  background-color: #e2e2e2;
+}
+
+#container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* 자식노드 간에 거리 주기 */
+  gap: 10px;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+  height: 200px;
+  /* 이미지의 비율 유지*/
+  object-fit: cover;
+}
