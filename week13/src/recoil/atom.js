@@ -12,11 +12,6 @@ export const emailAtom = atom({
   default: "홍길동@cau.ac.kr",
 });
 
-export const colorAtom = atom({
-  key: "color",
-  default: "#ffffff",
-});
-
 export const passwordAtom = atom({
   key: "password",
   default: "0000",
