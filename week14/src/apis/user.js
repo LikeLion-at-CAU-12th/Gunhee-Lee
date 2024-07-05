@@ -34,10 +34,9 @@ export const getNewRefreshToken = async () => {
 
     // 4. refreshToken 만료 시 로그아웃 후 로그인 페이지로 이동
     if (!refreshToken) {
-        localStorage.removeItem("access");
-        localStorage.removeItem("refresh");
-        alert("refresh 토큰이 만료되었습니다. 다시 로그인해주세요.");
-        window.location.href = "/";
+      localStorage.removeItem("access");
+      localStorage.removeItem("refresh");
+      window.location.href = "/";
     }
 
     const result = await axios.post(
@@ -55,5 +54,6 @@ export const getNewRefreshToken = async () => {
   } catch (error) {
     // 토큰이 만료되었을 경우
     alert("토큰이 만료되었습니다. 다시 로그인해주세요.");
+    console.log(error);
   }
 };
