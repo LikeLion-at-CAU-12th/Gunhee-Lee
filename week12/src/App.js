@@ -6,6 +6,8 @@ import BookList from './pages/BookList';
 import BookDetail from './pages/BookDetail';
 import TestList from './pages/TestList';
 import TestDetail from './pages/TestDetail';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
           <Route path=":id" element={<BookDetail/>} />
         </Route>
         <Route path="/tests" element={<TestList />} />
-        <Route path="/tests/detail" element={<TestDetail />}/>
+        <Route path="/tests/detail" element={<TestDetail />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </AppDom>
   );
